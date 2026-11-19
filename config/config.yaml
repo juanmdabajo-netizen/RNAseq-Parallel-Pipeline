@@ -1,0 +1,26 @@
+
+project:
+  name: RNAseq_parallel
+  geo_accession: GSE142326
+  bioproject: PRJNA596645
+  sra_study: SRP238206
+  organism: Komagataella phaffii
+  reference: GCF_000027005.1
+
+download:
+  n_runs: 1
+  strategy: sequential
+  max_workers: 1
+  max_size: u
+
+paths:
+  metadata: metadata
+  sra: data/raw/sra
+  fastq: data/raw/fastq
+  benchmarks: benchmarks
+  logs: logs
+
+benchmark:
+  repetitions: 3
+  monitor_cpu: true
+  monitor_memory: true

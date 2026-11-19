@@ -1,0 +1,24 @@
+
+# Archivos de secuenciación
+*.sra
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+
+# Carpetas de datos
+data/raw/sra/
+data/raw/fastq/
+SRR*/
+
+# Resultados temporales
+logs/
+benchmarks/*.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# Entornos locales
+.venv/
+env/
